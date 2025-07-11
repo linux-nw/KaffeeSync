@@ -1,0 +1,642 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    font-size: 90%;
+}
+
+body {
+    height: 100%;
+}
+
+.backround, .backround2, .backround3, .backround4, .backround5 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.backround {
+    background-image: url('images/backround.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.backround2 {
+    background-image: url('images/coffee2.jpg');
+}
+
+.backround3 {
+    background-image: url('images/backroundcontact.jpg');
+}
+
+.backround4 {
+    background-image: url('images/coffeee3_backround.jpg');
+}
+
+.backround5 {
+    background-image: url('images/background5.jpg');
+}
+
+.backround::before, .backround2::before, .backround3::before, .backround4::before, .backround5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+    z-index: 1;
+}
+
+.imp {
+    color: black;
+    text-align: center;
+    border: 3px solid #9a7b4f;
+    margin: 0 20%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+}
+
+.hellotext, .hellotext2 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    width: 80%;
+}
+
+.hellotext2 {
+    max-width: 75%;
+}
+.text-container2{
+font-family: 'Great Vibes', cursive;
+    color: #9a7b4f;
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+.hello, .hi {
+    font-family: 'Great Vibes', cursive;
+    color: #9a7b4f;
+    font-size: 200%;
+}
+
+.hello {
+    margin-bottom: 0;
+    font-size: 150%;
+}
+
+.hi {
+    font-size: 200%;
+}
+.nav, .nav2 {
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 2;
+    border: 2px solid grey;
+    padding: 1.3rem;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: rgba(51, 51, 51, 0.452);
+    box-shadow: 9px 9px 18px -6px #000000;
+    width: auto;
+    white-space: nowrap;
+}
+
+
+
+.nav2 {
+    border: 2px solid rgb(94, 94, 94);
+}
+
+.nav a, .nav2 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: rgb(165, 109, 6);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.buttons button {
+    background: transparent;
+    color: #fff;
+    border: 3px solid #9a7b4f;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.buttons button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9a7b4f;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.buttons button:hover {
+    color: #000;
+}
+
+.buttons button:hover::before {
+    transform: scaleX(1);
+}
+
+.textcontainers1{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.center {
+    text-align: center;
+    margin-top: 3em;
+    padding: 0 1.25em;    
+}
+
+.center .weg {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+.center .Fav {
+    font-family: 'Great Vibes', cursive;
+    color: #9a7b4f;
+    margin-bottom: 0;
+    font-size: 200%;
+    font-weight: 450;
+}
+
+.prod, .prod2 {
+ display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.875em;
+    margin: 2.5em auto;
+    padding: 0;
+    width: fit-content;
+}
+
+.item, .item2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    height: auto;
+    transition: box-shadow 0.3s ease;
+}
+
+.item {
+    width: 75%; 
+}
+
+.item2 {
+    width: 75%;
+    border: 2px solid #9a7b4f;
+}
+
+.item img {
+    width: 9.375em;
+    height: auto;
+    border-radius: 0.5em;
+    margin-right: 1.25em;
+    
+    transition: transform 0.8s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.about {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 40px;
+    margin: 20px auto;
+    color: black;
+    gap: 30px;
+    max-width: 90%; 
+}
+
+.about img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em; 
+    line-height: 1.6;
+    color: #333; 
+}
+
+
+
+
+.recipe-list{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.text {
+    font-size: 1em;
+    color: #333;
+    max-width: 100%
+}
+
+.text2{
+    font-size: 1em;
+    color: #333;
+    width: 100%
+}
+
+.centerworld {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ffffff, #b49262);
+    text-align: left;
+    margin-top: 5%;
+}
+
+.world {
+    max-width: 53%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.text-container {
+    margin-left: 2rem; 
+    color: rgb(0, 0, 0); 
+    max-width: 60%;
+    font-size: 2em;
+}
+
+.text-container h2 {
+    font-size: 3rem;
+    font-family: 'Great Vibes';
+    color: #b49262;
+}
+
+.text-container p {
+    font-size: 0.5em;
+    line-height: 1.5;
+}
+
+.textcontainers {
+    font-family: 'Great Vibes', cursive;
+    color: #9a7b4f;
+    margin-bottom: 2%;
+    font-size: 2em;
+}
+
+.card {
+    background: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid rgba(100, 100, 100, 0.651);
+    border-radius: 15px;
+    width: 80%;
+    padding: 4%;
+}
+
+.card img {
+    width: 40%;
+    height: auto;
+    margin: 1.875em auto 0.625em;
+}
+
+.origin {
+    color: #888;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    margin: 2.5% 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.rating p {
+    margin: 2px 0;
+    width: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin-left: 38%;
+    margin-top: 10px;
+}
+
+.rating img {
+    align-items: center;
+    margin-top: 10px;
+}
+
+.weight {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #b04e0f;
+    font-size: 1.1rem;
+}
+
+.bcg {
+    background-color: #000000;
+}
+
+.hello2 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    color: #9a7b4f;
+    font-size: 300%;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    max-width: 90%; 
+    margin: 20px auto; 
+    padding: 20px;
+    border: 2px solid #9a7b4f; 
+    border-radius: 8px;
+    background-color: rgba( 255, 255, 255, 0.9); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.form-label {
+    font-size: 1.1rem; 
+    font-weight: bold;
+    color: #333; 
+    text-align: center;
+}
+
+.form-input, 
+.form-select, 
+.form-textarea {
+    padding: 12px; 
+    font-size: 1rem;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    transition: 0.3s ease; 
+    text-align: center;
+}
+
+.form-button {
+    padding: 12px;
+    font-size: 1.1rem; 
+    background-color: #9a7b4f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease; 
+}
+
+.centerC, .centerC1 {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.centerC {
+    font-family: 'Great Vibes', cursive;
+    color: #9a7b4f;
+}
+
+.centerC1 {
+    color: black;
+    border: 1.5px solid #9a7b4f;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px auto;
+    width: 28%;
+    background-color: #b49262;
+}
+
+.ratCard {
+    text-align: center;
+    color: black;
+    border: 1.5px solid #9a7b4f;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.space {
+    padding: 0.3%;
+}
+
+.contact p, .contact h2 {
+    color: black;
+    text-align: center;
+}
+
+.formCon {
+    border: 3px solid #9a7b4f;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin: 2% auto;
+    width: 50%; 
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formCon input, .formCon textarea {
+    width: 95%; 
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #acacac;
+}
+
+.formCon button {
+    width: 40%;
+    padding: 10px;
+    background-color: #9a7b4f;
+    border: 0;
+}
+
+.logo {
+    margin: 0;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 5%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.541); 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+
+.rezept-box {
+    width: 300px;
+}
+
+.rezept-box img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.shop-button, .about-button {
+    font-size: 16px;
+    padding: 15px 25px;
+    background-color: #5A3921;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.shop-button:hover, 
+.about-button:hover {
+    background-color: #3C2F1A;
+}
+
+#ideen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#ideen > div {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+#ideen > div > div {
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #ddd; 
+}
+
+#ideen img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#ideen h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.hello {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: #9a7b4f;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.centered {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: #504f4f;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.part2 {
+    font-weight: bold;
+}
+
+.recipe-tags {
+    color: grey;
+    font-size: smaller;
+}

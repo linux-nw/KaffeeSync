@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KaffeeSync &ndash; Kontakt</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+            rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Contact.html">Kontakt</a>
+            <a href="rezepte.html">Rezepte</a>
+            <a href="About.html">Über uns</a>
+        </div>
+        <div class="backround3">
+            <img class="logo" src="images/FullLogo.png" alt="FullLogo">
+            <div class="hellotext">
+                <h1 class="hello">Unser Kontakt</h1>
+                <h2>Fragen? W&#252;nsche? Feedback?</h2>
+                <p>Wir sind f&#252;r dich da &#8722; digital, schnell und mit
+                    dem richtigen
+                    Gesp&#252;r f&#252;r Service, der nicht nur funktioniert,
+                    sondern
+                    begeistert.</p>
+            </div>
+        </div>
+
+        <form class="formCon" onsubmit="sendEmail(event)">
+            <h1 class="hi">Kontaktformular</h1>
+            <label for="name">Name:</label><br>
+            <input id="name" type="text" required>
+            <br>
+            <label for="email">E-Mail Adresse:</label><br>
+            <input id="email" type="email" required>
+            <br>
+            <label for="anliegen">Anliegen:</label><br>
+            <textarea id="anliegen" required></textarea>
+            <br>
+            <label for="TYPE">Art der Kontaktanfrage</label>
+
+            <select name="TYPE" id="TYPE">
+                <option value="Allgemeiner Support">Allgemeiner Support</option>
+                <option value="Beschwerde">Beschwerde</option>
+                <option value="Rechtliches">Rechtliches</option>
+                <option value="Fragen & Feedback">Fragen &amp; Feedback</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Absenden</button>
+
+        </form>
+
+        <script>
+function sendEmail(e) {
+    e.preventDefault(); 
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const problem = document.getElementById('anliegen').value;
+    const art = document.getElementById('TYPE').value;
+
+    const subject = `Anfrage: ${art} von ${name}`;
+
+        const body = `Hallo liebes KaffeeSync-Team,
+
+        mein Anliegen betrifft den Bereich "${art}".
+
+        ${problem}
+
+        Hier noch meine Kontaktdaten:
+        Name: ${name}
+        E-Mail: ${email}
+
+        Ich freue mich auf Ihre R&#252;ckmeldung.
+
+        Beste Gr&#252;&#223;e  
+        ${name}`;
+
+
+    const mailtoLink = `mailto:kontakt@kaffeesync.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+}
+
+            </script>
+
+        <div class="imp">
+            <h1 class="hi">Impressum</h1>
+
+            <p><strong>Angaben gem&#228;&#223; &#167; 5 TMG</strong></p>
+
+            <p><strong>KaffeeSync GmbH</strong><br>
+                Kaffeepfadstra&#223;e 42<br>
+                12345 KaffeStadt</p>
+
+            <p><strong>Vertreten durch:</strong><br>
+                Max Mustermann (Gesch&#228;ftsf&#252;hrer)</p>
+
+            <p><strong>Kontakt:</strong><br>
+                Telefon: +49 123 456789<br>
+                E-Mail: <a
+                    href="mailto:kontakt@kaffeesync.de">kontakt@kaffeesync.de</a></p>
+
+            <p><strong>Handelsregister:</strong><br>
+                Eintragung im Handelsregister<br>
+                Registergericht: Amtsgericht KaffeStadt<br>
+                Registernummer: HRB 12345</p>
+
+            <p><strong>Umsatzsteuer-ID:</strong><br>
+                USt-IdNr.: DE123456789</p>
+
+            <p><strong>Verantwortlich f&#252;r den Inhalt nach &#167; 55 Abs. 2
+                    RStV:</strong><br>
+                Max Mustermann (Anschrift wie oben)</p>
+
+            <p><strong>Haftungsausschluss:</strong><br>
+                Die Inhalte unserer Seiten wurden mit gr&#246;&#223;ter Sorgfalt
+                erstellt.<br>
+                F&#252;r die Richtigkeit, Vollst&#228;ndigkeit und
+                Aktualit&#228;t der Inhalte
+                k&#246;nnen wir jedoch keine Gew&#228;hr &#252;bernehmen.</p>
+
+        </div>
+
+        <br><br>
+          <script>
+            window.addEventListener('wheel', function(e) {
+              if (e.deltaX !== 0) {
+                e.preventDefault();
+              }
+            }, { passive: false });
+          </script>
+
+
+        <footer>
+
+            <div class="centered2"></div>
+
+            <div class="centered">
+                <p class="part2">KaffeeSync GmbH</p>
+
+                <p>&nbsp;Kaffeepfadstra&#223;e 42 12345 KaffeStadt</p>
+
+                <p>Tel. +49 123 456789</p>
+
+                <p>Mail: kontakt@kaffeesync.de</p>
+
+                <p>&#169; 2025 KaffeeSync </p>
+            </div>
+
+        </footer>
+    </body>
+</html>

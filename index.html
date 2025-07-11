@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KaffeeSync &ndash; Wo der Kaffee zuhause ist</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+            rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Contact.html">Kontakt</a>
+            <a href="rezepte.html">Rezepte</a>
+            <a href="About.html">Über uns</a>
+        </div>
+
+        <div class="backround">
+            <img class="logo" src="images/FullLogo.png" alt="FullLogo">
+
+            <div class="hellotext">
+                <br>
+                <br>
+                <br>
+                <h1 class="hello" id="greeting">Willkommen bei KaffeeSync!</h1>
+                <h2>Ein unglaublicher Ort mit einem<br>unvergleichlichen
+                    Geschmack.</h2>
+                <p>Ein Ort, an dem unvergleichlicher Geschmack auf
+                    unvergessliche <br>Erlebnisse trifft &ndash; mehr als nur
+                    Kaffee.</p>
+                <div class="buttons">
+                    <button class="shop-button"
+                        onclick="window.location.href='Shop.html';">Shop</button>
+                    <button class="about-button"
+                        onclick="window.location.href='About.html';">&#220;ber
+                        uns</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let greetingText;
+            const hour = new Date().getHours();
+
+            if (hour < 12) {
+                greetingText = 'Schönen Morgen!';
+            } else if (hour < 18) {
+                greetingText = 'Schönen Mittag!';
+            } else {
+                greetingText = 'Schönen Abend!';
+            }
+
+            document.getElementById('greeting').textContent = greetingText;
+        });
+    </script>
+        <div class="center">
+            <p class="weg">Der schnelle Weg zu Ihrem Lieblingskaffee</p>
+            <p class="Fav">Kaffeefavorit entdecken</p>
+        </div>
+        <div class="centeredIX">
+        <div class="prod">
+
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Arabica%20Bohnen.png" alt="Arabica Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Arabica Bohnen</h2>
+                    Arabica Bohnen zeichnen sich durch ihren milden, fruchtigen Geschmack aus. Sie sind weltweit für ihre hohe Qualität und Aromenvielfalt bekannt.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Robusta%20Bohnen.png" alt="Robusta Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Robusta Bohnen</h2>
+                    Robusta Bohnen bieten einen kräftigen, intensiven Geschmack. Sie haben einen höheren Koffeingehalt und sind oft in Espresso-Mischungen zu finden.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Liberica%20Bohnen.png" alt="Liberica Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Liberica Bohnen</h2>
+                    Liberica Bohnen sind für ihren einzigartigen, rauchigen Geschmack bekannt. Sie sind weniger verbreitet und bieten ein außergewöhnliches Kaffeearoma.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Geisha%20Bohnen.png" alt="Geisha Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Geisha Bohnen</h2>
+                    Geisha Bohnen gelten als eine der edelsten Kaffeesorten, bekannt für ihre blumigen Aromen und komplexen Geschmacksprofile.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Catuai%20Bohnen.png" alt="Catuai Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Catuai Bohnen</h2>
+                    Catuai Bohnen sind besonders robust und widerstandsfähig gegenüber Krankheitserregern, bieten aber dennoch einen milden, angenehmen Geschmack.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Bourbon%20Bohnen.png" alt="Bourbon Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Bourbon Bohnen</h2>
+                    Bourbon Bohnen zeichnen sich durch ihre Süße und vollmundigen Aromen aus, die oft von einem Hauch von Schokolade begleitet werden.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Typica%20Bohnen.png" alt="Typica Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Typica Bohnen</h2>
+                    Typica Bohnen sind die Grundlage vieler Kaffeekulturen und bieten einen ausgewogenen Geschmack mit einer leichten Süße und einer milden Säure.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/SL28%20Bohnen.png" alt="SL28 Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">SL28 Bohnen</h2>
+                    SL28 Bohnen stammen aus Kenia und sind bekannt für ihre komplexe Säure und fruchtigen Aromen, die an Zitrusfrüchte und Beeren erinnern.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Pacamara%20Bohnen.png" alt="Pacamara Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Pacamara Bohnen</h2>
+                    Pacamara Bohnen sind eine Kreuzung der Sorten Pacas und Maragogipe, die einen vollmundigen, fruchtigen Geschmack mit einer milden Säure bieten.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Jamaican_Blue_Mountain_Bohnen.png" alt="Jamaican Blue Mountain Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Jamaican Blue Mountain</h2>
+                    Jamaican Blue Mountain ist einer der teuersten Kaffees der Welt, bekannt für seine exquisite Feinheit, milden Geschmack und geringe Säure.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Ethiopian_Yirgacheffe_Bohnen.png" alt="Ethiopian Yirgacheffe Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Ethiopian Yirgacheffe</h2>
+                    Yirgacheffe Kaffee aus Äthiopien ist berühmt für seinen blumigen, fruchtigen Geschmack und seine leuchtende Säure, die an Zitrusfrüchte erinnert.
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="images/Kaffeeverpackungen/Sumatra_Mandheling_Bohnen.png" alt="Sumatra Mandheling Bohnen">
+                <div class="text">
+                    <h2 class="textcontainers">Sumatra Mandheling</h2>
+                    Sumatra Mandheling Bohnen bieten einen erdigen, würzigen Geschmack mit einem vollen Körper und einer geringen Säure, typisch für indonesische Kaffees.
+                </div>
+            </div>
+        </div>
+            
+        </div>
+        <div class="centerworld">
+            <img class="world"
+                src="https://www.tchibo.de/newmedia/page/img/4a00dfaba76cec8e/image_large.png"
+                alt="Karte der Welt">
+            <div class="text-container">
+                <h2>Wo unser Kaffee herkommt</h2>
+                <p>Unsere Produkte kommen aus den unterschiedlichsten Teilen der
+                    Welt, und wir legen gr&#246;&#223;ten Wert darauf,
+                    dass sie unter fairen Bedingungen produziert werden. Das
+                    bedeutet: Jeder Schritt in der Lieferkette wird
+                    mit Respekt gegen&#252;ber den Bauern und ihrer Arbeit
+                    gemacht. Unsere Fair&#8722;Trade&#8722;Partner kommen
+                    aus L&#228;ndern
+                    wie Vietnam, Indonesien, Brasilien, Kolumbien,
+                    &#196;thiopien und fast ganz Afrika &#8722; &#252;berall
+                    dort, wo
+                    die
+                    Bauern von fairen Preisen und nachhaltigen
+                    Arbeitsbedingungen profitieren.
+
+                    Dank Fair Trade erhalten die Produzenten nicht nur einen
+                    gerechten Lohn, sondern haben auch bessere
+                    Arbeitsbedingungen und Zugang zu Bildung und Gesundheit. So
+                    wird sichergestellt, dass jeder in der Kette
+                    von der Produktion bis zum Verkauf ein St&#252;ck vom Erfolg
+                    abbekommt.
+
+                    Fair Trade bedeutet nicht nur gute Qualit&#228;t f&#252;r
+                    dich als Konsument, sondern auch eine positive
+                    Ver&#228;nderung f&#252;r die ganze Welt. Und das Beste
+                    daran? Alle sind gl&#252;cklich &#8722; die Bauern, die
+                    Produzenten
+                    und du!</p>
+            </div>
+        </div>
+            
+                <h1 class="text-container2">Rezept-Ideen</h1>
+            
+
+            
+        <div class="recipe-list">
+
+            <div class="prod">
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#9749; Tiramisu</h1>
+                        <p>Ein italienischer Klassiker: L&#246;ffelbiskuits in
+                            starkem Kaffee tr&#228;nken, mit einer
+                            Mascarponecreme schichten, kaltstellen und mit
+                            Kakaopulver vollenden.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#127851; Kaffee-Brownies</h1>
+                        <p>Saftiger Schokoteig trifft auf eine kr&#228;ftige
+                            Espressonote &#8211; im Ofen gebacken und mit
+                            knackigen Schokost&#252;ckchen verfeinert.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#127848; Kaffee-Eis</h1>
+                        <p>Vanilleeis mit frisch gebr&#252;htem Espresso
+                            &#252;bergossen &#8211; cremig, s&#252;&#223; und
+                            koffeinhaltig in einem L&#246;ffel vereint.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#128081; Kaffee-Gugelhupf</h1>
+                        <p>Ein fluffiger R&#252;hrkuchen aus Butter, Zucker,
+                            Eiern, Mehl und Kaffee &#8211; perfekt f&#252;r
+                            Kaffeepausen mit Stil.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#127850; Cookies mit Kaffee</h1>
+                        <p>Knusprige Cookies mit feinem Kaffeearoma &#8211;
+                            ideal f&#252;r den kleinen Energiekick
+                            zwischendurch.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#129482; Eiskaffee</h1>
+                        <p>Gek&#252;hlter Kaffee mit Eisw&#252;rfeln und einem
+                            Sahneh&#228;ubchen &#8211; der perfekte Sommerdrink
+                            f&#252;r Kaffee-Fans.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#128139; Kaffee-Macarons</h1>
+                        <p>Franz&#246;sisches Baisergeb&#228;ck mit feiner
+                            Kaffeenote &#8211; knusprig au&#223;en, weich und
+                            aromatisch innen.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#127864; Kaffee-Martini</h1>
+                        <p>Ein eleganter Cocktail aus Espresso, Wodka und
+                            Kaffeelik&#246;r &#8211; wach, stilvoll und
+                            garantiert kein Langweiler.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#127852; Kaffee-Tr&#252;ffel</h1>
+                        <p>Zartschmelzende Schokokugeln mit einem Hauch Kaffee
+                            &#8211; perfekt zum Verschenken oder selber
+                            Genie&#223;en.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#129379; Kaffee-Porridge</h1>
+                        <p>Ein warmes Haferfr&#252;hst&#252;ck mit Banane, Milch
+                            und einem Schuss Kaffee &#8211; s&#228;ttigend und
+                            belebend zugleich.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#127854; Mousse au Chocolat</h1>
+                        <p>Fluffige Schokomousse mit einem Espresso veredelt
+                            &#8211; ein Desserttraum f&#252;r Schoko- und
+                            Kaffeeliebhaber.</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="text2">
+                        <h1>&#127881; Quarkb&#228;llchen</h1>
+                        <p>Frittierte Teigkugeln aus Quark, Mehl und Zucker
+                            &#8211; au&#223;en knusprig, innen weich, perfekt
+                            f&#252;r jede Kaffeerunde.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <img src="images/Coffe-3er.png" alt="Kaffee-Bild">
+            <div class="about-text">
+                <h1 class="textcontainers">&#220;ber unseren Kaffee</h1>
+                <p>Wir bieten dir mehr als nur Kaffee. Unsere Bohnen stammen aus
+                    den besten Anbaugebieten der Welt, wie
+                    Kolumbien und Brasilien, und werden nachhaltig und fair
+                    gehandelt. Jeder Schluck erz&#228;hlt die Geschichte
+                    einer Reise von den Plantagen bis zu dir. Mit unseren
+                    sorgf&#228;ltig ausgew&#228;hlten Bohnen und erstklassiger
+                    R&#246;stung garantieren wir dir den perfekten Kaffeegenuss.
+                    Ob morgens beim Aufwachen oder nachmittags zum
+                    Entspannen &#8722; Kaffee, der nicht nur den Tag, sondern
+                    auch dein Herz erw&#228;rmt.</p>
+            </div>
+        </div>
+
+          <script>
+            window.addEventListener('wheel', function(e) {
+              if (e.deltaX !== 0) {
+                e.preventDefault();
+              }
+            }, { passive: false });
+          </script>
+        
+        <footer>
+
+            <div class="centered2"></div>
+
+            <div class="centered">
+                <p class="part2">KaffeeSync GmbH</p>
+
+                <p>&nbsp;Kaffeepfadstra&#223;e 42 12345 KaffeStadt</p>
+
+                <p>Tel. +49 123 456789</p>
+
+                <p>Mail: kontakt@kaffeesync.de</p>
+
+                <p>&#169; 2025 KaffeeSync </p>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
