@@ -18,4 +18,4 @@ KaffeeSync is a multi-page static website showcasing coffee varieties, recipes, 
 - Designed as a concept/demo, not for live deployment  
 
 ## License
-MIT License (or your preferred license)
+MIT License
